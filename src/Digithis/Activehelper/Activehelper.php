@@ -35,7 +35,7 @@ class Activehelper {
 	* @return string
 	*/
 
-	public function link($routes, $url, $value = '', $attributes = array('class' => 'active'))
+	public function link($routes, $url, $value = '', $attributes = array('class' => 'on'))
 	{
 		if(empty($value))
 		{
@@ -111,7 +111,7 @@ class Activehelper {
 	{
 		if ($this->is($routes))
 		{
-			return 'active';
+			return 'on';
 		}
 
 		return false;
